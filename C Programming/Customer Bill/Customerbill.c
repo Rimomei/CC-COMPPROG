@@ -20,7 +20,8 @@ int main(){
   totalcd = 300 * cd;
   totaltape = 150 * tape;
   subtotal =(float) (totaltv + totalvcr + totalrc + totalcd + totaltape);
-  tax =(float)(subtotal + 0.0825);
+
+  tax =(float)(subtotal * 0.0825);
   total = subtotal + tax;
 
  printf("\n QTY          DESCRIPTION         UNIT PRICE            TOTAL PRICE \n");
@@ -31,7 +32,7 @@ int main(){
  printf("\n  %d       CD                  300.00                 %4.2f\n",cd, totalcd);
  printf("\n  %d       TAPE RECORDER       150.00                 %4.2f\n",tv, totaltv);
  printf("\n-------------------------------------------------------------------------\n");
- printf("\n                             SUBTOTAL                %4.2f\n", subtotal);
+ printf("\n                             SUBTOTAL               %4.2f\n", subtotal);
  printf("\n                                  TAX                %5.2f\n", tax);
  printf("\n                                TOTAL               %4.2f\n",total);
 return 0; 
