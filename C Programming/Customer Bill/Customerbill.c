@@ -1,39 +1,40 @@
 #include <stdio.h>
-int main(){
- int tv, vcr, cd, rc, tape;
- float totaltv, totalvcr, totalrc, totalcd, totaltape, subtotal, tax, total;
+int main()
+{
+    int TV, VCR, CD, RC, TAPE;
+    float TOTALTV, TOTALVCR, TOTALRC, TOTALCD, TOTALTAPE, SUBTOTAL, TAX, TOTAL;
 
- printf("How many TVs were sold?\t");
- scanf("%d", &tv);
- printf("How man* VCRs were sold?\t");  
- scanf("%d", &vcr);
- printf("How many Remote Controllers were sold?\t");
- scanf("%d", &rc);
- printf("How many CDs were sold?\t");
- scanf("%d", &cd);
- printf("How many Tape Recorders were sold?\t");
- scanf("%d", &tape);
+    printf("How many TVs were sold?\t");
+    scanf("%d", &TV);
+    printf("How man* VCRs were sold?\t");
+    scanf("%d", &VCR);
+    printf("How many Remote Controllers were sold?\t");
+    scanf("%d", &RC);
+    printf("How many CDs were sold?\t");
+    scanf("%d", &CD);
+    printf("How many TAPE Recorders were sold?\t");
+    scanf("%d", &TAPE);
 
-  totaltv = 400 * tv;
-  totalvcr = 220 * vcr;
-  totalrc = 35.20 * rc;
-  totalcd = 300 * cd;
-  totaltape = 150 * tape;
-  subtotal =(float) (totaltv + totalvcr + totalrc + totalcd + totaltape);
+    TOTALTV = 400 * TV;
+    TOTALVCR = 220 * VCR;
+    TOTALRC = 35.20 * RC;
+    TOTALCD = 300 * CD;
+    TOTALTAPE = 150 * TAPE;
+    SUBTOTAL = (float)(TOTALTV + TOTALVCR + TOTALRC + TOTALCD + TOTALTAPE);
 
-  tax =(float)(subtotal * 0.0825);
-  total = subtotal + tax;
+    TAX = (float)(SUBTOTAL * 0.0825);
+    TOTAL = SUBTOTAL + TAX;
 
- printf("\n QTY          DESCRIPTION         UNIT PRICE            TOTAL PRICE \n");
- printf("\n-------------------------------------------------------------------------\n");
- printf("\n  %d       TV                  400.00                 %4.2f\n",tv, totaltv);
- printf("\n  %d       VCR                 220.00                 %4.2f\n",vcr, totalvcr);
- printf("\n  %d       REMOTE CONTROLLER    35.20                  %5.2f\n",rc, totalrc);
- printf("\n  %d       CD                  300.00                 %4.2f\n",cd, totalcd);
- printf("\n  %d       TAPE RECORDER       150.00                 %4.2f\n",tv, totaltv);
- printf("\n-------------------------------------------------------------------------\n");
- printf("\n                             SUBTOTAL               %4.2f\n", subtotal);
- printf("\n                                  TAX                %5.2f\n", tax);
- printf("\n                                TOTAL               %4.2f\n",total);
-return 0; 
+    printf(" QTY\tDESCRIPTION\t\tUNIT PRICE\tTOTAL PRICE \n");
+    printf("-----------------------------------------------------------------\n");
+    printf("%d\tTV\t\t\t400.00\t\t%4.2f\n", TV, TOTALTV);
+    printf("%d\tVCR\t\t\t220.00\t\t%4.2f\n", VCR, TOTALVCR);
+    printf("%d\tREMOTE CONTROLLER\t 35.20\t\t  %5.2f\n", RC, TOTALRC);
+    printf("%d\tCD PLAYER\t\t300.00\t\t %4.2f\n", CD, TOTALCD);
+    printf("%d\tTAPE RECORDER\t\t150.00\t\t%4.2f\n", TV, TOTALTV);
+    printf("----------------------------------------------------------------\n");
+    printf("\t\t\t\tSUBTOTAL\t%4.2f\n", SUBTOTAL);
+    printf("\t\t\t\tTAX\t\t %5.2f\n", TAX);
+    printf("\t\t\t\tTOTAL\t\t%4.2f\n", TOTAL);
+    return 0;
 }
