@@ -1,3 +1,4 @@
+//Name: Howard Lance D. Mangohig
 #include <stdio.h>
 void Perimeter(double x, double y);
 void Area(double x, double y);
