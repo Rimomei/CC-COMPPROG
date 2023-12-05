@@ -1,3 +1,4 @@
+//Name: Howard Lance D. Mangohig BSCS - 1A
 #include <stdio.h>
 void getCeiling(double x,double y,double z); //SO THIS RETURNS ALL VALUE WHICH ARE GIVEN SO THIS IS CEILING WHICH IS THEIR HIGHEST NUMBER
 void getFloor(double x,double y,double z);
